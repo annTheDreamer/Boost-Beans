@@ -1,0 +1,236 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM: 
+
+- Font-sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Paragraph default: 1.8rem
+
+- Font-weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line-heights:
+Default: 1
+Medium: 1.3
+Medium-2: 1.4
+Semi-large: 1.6
+Large: 1.8
+
+- Letter-spacing:
+-0.5px
+1.5px
+
+
+--- 02 COLORS:
+
+- Primary: #04724D
+- Tints: #cde3db, #e6f1ed, #82b9a6
+- Shades: #046745, #023927, #000b08
+- Accents:
+- Greys: #101010, #333
+
+--- 03 SHADOWS:
+box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.3), 0 1.2rem 3rem rgba(0, 0, 0, 0.2)
+
+--- 04 BORDER-RADIUS
+Default: 11px
+Small: 9px 
+
+--- 05 WHITESPACE:
+
+- Spacing system (px): 
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+--- 06 LINEAR-GRADIENT:
+- linear-gradient(
+			to top left,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.2)
+		)
+
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 9.6rem 6.4rem;
+}
+
+.container-medium {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 4.8rem 6.4rem;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--5-cols {
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2.4rem;
+	justify-items: center;
+	align-items: center;
+}
+
+.grid--6-cols {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.heading-primary {
+	color: #fff;
+	font-size: 6.2rem;
+	letter-spacing: -0.5px;
+	margin-bottom: 4.4rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	margin-bottom: 4rem;
+}
+
+.heading-tertiary {
+	font-size: 2.4rem;
+	margin-bottom: 1.4rem;
+}
+
+.heading-quarternary {
+	font-size: 2rem;
+	margin-bottom: 1.2rem;
+}
+
+.subheading {
+	display: block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 500;
+	color: #04724d;
+	margin-bottom: 1.8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	background-color: #04724d;
+	border: 2px solid #04724d;
+	padding: 1.6rem 3.2rem;
+	border-radius: 1000px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #046745;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+	background-color: #fff;
+	border-color: #04724d;
+	color: #04724d;
+}
+
+.btn-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem auto 0;
+}
+
+em {
+	color: #046745;
+}
+
+.hidden {
+	display: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+
+/********************************/
+/* HELPER CLASSES */
+/********************************/
+
+.margin-right-small {
+	margin-right: 1.6rem;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.margin-bottom-medium {
+	margin-bottom: 4.8rem;
+}
+
+.margin-auto {
+	margin: 0 auto;
+}
+
+.white {
+	color: #fff;
+}
+
+.light-green {
+	color: #cde3db;
+}
+
+.green {
+	color: #04724d;
+}
+
+.dark-green {
+	color: #023927;
+}
